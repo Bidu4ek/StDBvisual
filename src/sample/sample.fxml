@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
+   <children>
+      <TabPane prefHeight="640.0" prefWidth="1062.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Редактор">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="139.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="0.0" prefWidth="201.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.0" minWidth="0.0" prefWidth="32.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="670.0" minWidth="0.0" prefWidth="222.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="670.0" minWidth="10.0" prefWidth="264.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="670.0" minWidth="10.0" prefWidth="207.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="201.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="332.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="398.0" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="456.0" minHeight="0.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="477.0" minHeight="10.0" prefHeight="390.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text id="z" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО:" wrappingWidth="53.6708984375" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Факультет:" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Курс:" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="№ зачетной книги:" GridPane.rowIndex="4" />
+                        <Label prefHeight="21.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField id="FIO" fx:id="FIO" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="FAC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="numZach" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <RadioButton id="curse1" fx:id="course1" mnemonicParsing="false" text="1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <RadioButton id="curse2" fx:id="course2" layoutX="10.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton id="curse3" fx:id="course3" mnemonicParsing="false" text="3" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="80.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton id="curse4" fx:id="course4" mnemonicParsing="false" text="4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="120.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton id="curse5" fx:id="course5" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="160.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <Label text="Предмет" GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Преподователь" GridPane.columnIndex="4" />
+                        <Label text="Оценка" GridPane.columnIndex="5" />
+                        <RadioButton fx:id="assessment1_1" mnemonicParsing="false" text="1" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="assessment1_2" mnemonicParsing="false" text="2" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment1_3" mnemonicParsing="false" text="3" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="80.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment1_4" mnemonicParsing="false" text="4" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="120.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment1_5" mnemonicParsing="false" text="5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="160.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment2_1" mnemonicParsing="false" text="1" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <RadioButton fx:id="assessment3_1" mnemonicParsing="false" text="1" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <RadioButton fx:id="assessment4_1" mnemonicParsing="false" text="1" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <RadioButton fx:id="assessment2_2" mnemonicParsing="false" text="2" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment3_2" mnemonicParsing="false" text="2" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment4_2" mnemonicParsing="false" text="2" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment2_3" mnemonicParsing="false" text="3" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="80.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment3_3" mnemonicParsing="false" text="3" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="80.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment4_3" mnemonicParsing="false" text="3" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="80.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment2_4" mnemonicParsing="false" text="4" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="120.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment3_4" mnemonicParsing="false" text="4" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="120.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment4_4" mnemonicParsing="false" text="4" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="120.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment2_5" mnemonicParsing="false" text="5" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="160.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment3_5" mnemonicParsing="false" text="5" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="160.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="assessment4_5" mnemonicParsing="false" text="5" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="160.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <TextField fx:id="sub1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="lecturer1" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="sub2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="lecturer2" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <TextField fx:id="sub3" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <TextField fx:id="lecturer3" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="sub4" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField fx:id="lecturer4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Button id="addButton" fx:id="addButton" mnemonicParsing="false" text="Добавить" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets bottom="300.0" left="30.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+          <Tab text="Список">
+               <content>
+                  <TableView id="tableInfo" fx:id="tableInfo" prefHeight="531.0" prefWidth="1062.0">
+                    <columns>
+                      <TableColumn id="colStudent" fx:id="colStudent" prefWidth="150.0" text="Студент" />
+                      <TableColumn id="colCourse" fx:id="colCourse" prefWidth="92.0" text="Курс" />
+                        <TableColumn id="colFac" fx:id="colFac" minWidth="0.0" prefWidth="134.0" text="Факультет" />
+                        <TableColumn id="colNum" fx:id="colNum" prefWidth="177.0" text="№ зачетной книги" />
+                        <TableColumn id="colSub" fx:id="colSub" prefWidth="178.0" text="Предмет" />
+                        <TableColumn id="colLec" fx:id="colLec" prefWidth="247.0" text="Преподаватель" />
+                        <TableColumn id="colAs" fx:id="colAs" prefWidth="84.0" text="Оценка" />
+                    </columns>
+                  </TableView>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+      <CheckBox layoutX="861.0" layoutY="566.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="92.0" text="CheckBox" />
+   </children>
+</Pane>
